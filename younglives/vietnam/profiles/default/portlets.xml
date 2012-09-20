@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<portlets
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="plone">
+
+ <assignment
+     manager="plone.rightcolumn"
+     category="context"
+     key="/"
+     type="younglives.portlets.KeyResources"
+     name="KeyResources"
+     />
+
+ <assignment
+     insert-before="*"
+     manager="plone.leftcolumn"
+     category="context"
+     key="/"
+     type="younglives.vietnam.portlets.logo"
+     name="VietnamLogo"
+     />
+
+</portlets>

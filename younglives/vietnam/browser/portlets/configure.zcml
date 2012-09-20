@@ -1,0 +1,17 @@
+<configure 
+    xmlns="http://namespaces.zope.org/zope" 
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone" 
+    i18n_domain="younglives.vietnam">
+
+    <include package="plone.app.portlets" />
+
+    <plone:portlet name="younglives.vietnam.portlets.logo" 
+        interface=".vietnam-logo.IVietnamLogoPortlet"
+        assignment=".vietnam-logo.Assignment" 
+        renderer=".vietnam-logo.Renderer"
+        addview=".vietnam-logo.AddForm" 
+        editview=".vietnam-logo.EditForm" />
+
+</configure>

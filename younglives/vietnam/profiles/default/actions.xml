@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<object name="portal_actions" meta_type="Plone Actions Tool"
+   xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ <action-provider name="portal_actions"/>
+ <object name="portal_tabs" meta_type="CMF Action Category">
+  <object name="who" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">False</property>
+  </object>
+  <object name="what" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">False</property>
+  </object>
+  <object name="where" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">False</property>
+  </object>
+  <object name="themes" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">False</property>
+  </object>
+  <object name="publications" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">False</property>
+  </object>
+  <object name="international_tab" meta_type="CMF Action" i18n:domain="younglives.vietnam">
+   <property name="title" i18n:translate="">International</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">string:http://www.younglives.org.uk/</property>
+   <property name="icon_expr"></property>
+   <property name="available_expr"></property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+  <object name="ethiopia_tab" meta_type="CMF Action" i18n:domain="younglives.vietnam">
+   <property name="title" i18n:translate="">Ethiopia</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">string:http://www.younglives.org.uk/where-we-work/ethiopia</property>
+   <property name="icon_expr"></property>
+   <property name="available_expr"></property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+  <object name="vietnam_tab" meta_type="CMF Action" i18n:domain="younglives.vietnam">
+   <property name="title" i18n:translate="">Vietnam</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">string:${portal_url}</property>
+   <property name="icon_expr"></property>
+   <property name="available_expr"></property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+  <object name="peru_tab" meta_type="CMF Action" i18n:domain="younglives.vietnam">
+   <property name="title" i18n:translate="">Peru</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">string:http://www.ninosdelmilenio.org/</property>
+   <property name="icon_expr"></property>
+   <property name="available_expr"></property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+  <object name="vietnam_tab" meta_type="CMF Action" i18n:domain="younglives.vietnam">
+   <property name="title" i18n:translate="">Vietnam</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">string:http://www.younglives.org.uk/where-we-work/vietnam</property>
+   <property name="icon_expr"></property>
+   <property name="available_expr"></property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+ </object>
+</object>

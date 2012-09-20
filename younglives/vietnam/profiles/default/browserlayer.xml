@@ -1,0 +1,4 @@
+<layers>
+    <layer name="younglives.vietnam"
+        interface="younglives.vietnam.browser.interfaces.IYounglivesVietnam" />
+</layers>

@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="younglives.vietnam">
+
+  <browser:resourceDirectory
+      name="younglives.vietnam.stylesheets"
+      directory="stylesheets"
+      layer=".interfaces.IYounglivesVietnam"
+      />
+
+  <browser:resourceDirectory
+      name="younglives.vietnam.images"
+      directory="images"
+      layer=".interfaces.IYounglivesVietnam"
+      />
+
+  <include package=".portlets" />
+  <include package=".viewlets" />
+
+</configure>
