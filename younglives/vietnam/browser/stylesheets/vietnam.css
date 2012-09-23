@@ -1,6 +1,6 @@
 body
 {
-    background-color: rgba(192, 25, 83, 0.1);
+    background-color: rgba(234, 91, 12, 0.1);
 }
 
 #portaltab-international_tab
@@ -11,7 +11,7 @@ body
 
 #breadcrumbs-wrapper
 {
-    background-color: #C01953;
+    background-color: #EA5B0C;
 }
 
 #breadcrumbs-wrapper a
@@ -31,34 +31,34 @@ body
 
 a, a:link
 {
-    color: #C01953;
+    color: #EA5B0C;
 }
 
 a:visited, a:hover, a:active,
 #content a:visited
 {
-    color: #E08CA9;
+    color: #F5AD86;
 }
 
 .portletNavigationTree a,
 .portletNavigationTree a:link
 {
-    color: #C01953 !important;
+    color: #EA5B0C !important;
 }
 
 .portletNavigationTree a:visited,
 .portletNavigationTree a:active
 {
-    color: #E08CA9 !important;
+    color: #F5AD86 !important;
 }
 
 .portlet dt.portletHeader
 {
-    background-color: #C01953;
+    background-color: #EA5B0C;
     color: white;
 }
 
 dl.portletStaticText
 {
-    background-color: rgba(192, 25, 83, 0.1);
+    background-color: rgba(234, 91, 12, 0.1);
 }
