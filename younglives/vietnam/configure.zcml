@@ -10,4 +10,6 @@
   <include package=".browser" />
   <include file="profiles.zcml" />
 
+  <i18n:registerTranslations directory="locales" />
+
 </configure>
