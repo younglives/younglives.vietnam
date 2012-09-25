@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <site>
- <property name="title">Những cuộc đời trẻ</property>
+ <property name="title">Những cuộc đời trẻ thơ</property>
  <property name="description"></property>
  <property name="selectable_views" type="lines">
   <element value="folder_listing"/>
@@ -8,7 +8,7 @@
  </property>
  <property name="email_from_address"
     type="string">younglives@younglives.org.uk</property>
- <property name="email_from_name" type="string">Những cuộc đời trẻ</property>
+ <property name="email_from_name" type="string">Những cuộc đời trẻ thơ</property>
  <property name="validate_email" type="boolean">False</property>
  <property name="email_charset" type="string">utf-8</property>
  <property name="enable_permalink" type="boolean">False</property>
