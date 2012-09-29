@@ -1,6 +1,23 @@
 body
 {
+    font-family:"Times New Roman",Georgia,Serif;
     background-color: rgba(234, 91, 12, 0.1);
+}
+
+#portal-column-content h1,
+#portal-column-content h2
+{
+    font-family:"Times New Roman",Georgia,Serif;
+}
+
+#content .documentDescription,
+#content #description {
+    font-family:"Times New Roman",Georgia,Serif;
+}
+
+#home-blocks h3
+{
+    font-family:"Times New Roman",Georgia,Serif;
 }
 
 #portaltab-international_tab
