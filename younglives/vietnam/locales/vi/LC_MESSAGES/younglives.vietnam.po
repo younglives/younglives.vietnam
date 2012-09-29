@@ -1,15 +1,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: Sun Sep 23 01:47:25 2012\n"
+"POT-Creation-Date: 2012-09-29 19:26+0000\n"
 "PO-Revision-Date: 2012-09-23 02:04+0100\n"
 "Last-Translator: Michael Davis <m.r.davis@lib-usr.co.uk>\n"
 "Language-Team: Vietnamese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: zope/app/locales/extract.py\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+"Generated-By: zope/app/locales/extract.py\n"
 
 #: ./profiles/default/actions.xml
 msgid "Ethiopia"
@@ -30,3 +34,4 @@ msgstr ""
 #: ./profiles/default/actions.xml
 msgid "Vietnam"
 msgstr "Việt Nam"
+
