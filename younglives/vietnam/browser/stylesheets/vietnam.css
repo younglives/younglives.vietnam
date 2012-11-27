@@ -69,7 +69,8 @@ a:visited, a:hover, a:active,
     color: #F5AD86 !important;
 }
 
-.portlet dt.portletHeader
+.portlet dt.portletHeader,
+.portlet dt.portletHeader a
 {
     background-color: #EA5B0C;
     color: white;
