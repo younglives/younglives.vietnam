@@ -4,4 +4,7 @@
          based-on="Plone Default">
     <viewlet name="younglives.vietnam-banner" />
   </order>
+  <hidden manager="plone.portalfooter" skinname="Young Lives Theme">
+    <viewlet name="younglives.footer" />
+  </hidden>
 </object>

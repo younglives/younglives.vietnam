@@ -1,0 +1,105 @@
+<div id="younglives-footer"
+     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     i18n:domain="younglives.theme"
+     tal:define="isHomepage view/isHomepage">
+    <div class="footer-img" tal:condition="isHomepage" tal:define="img view/footer_image">
+        <img tal:replace="structure img/tag" tal:condition="img"/>
+    </div>
+    <div class="footer-blocks" tal:condition="not:isHomepage">
+        <div class="grid_6 block" tal:repeat="box view/boxes">
+            <h6 tal:content="box/title" />
+            <ul class="arrow-list">
+                <li tal:repeat="link box/links"
+                    tal:attributes="class python:repeat['link'].end and 'last' or ''">
+                    <a tal:attributes="href link/url;
+                                       title link/title"
+                       tal:content="link/title" />
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="grid_6 block news">
+        <h6 i18n:translate="younglives_theme_label_find_out_more">Find out more</h6>
+        <ul>
+            <li>
+                <a title="News &amp; Events" alt="News &amp; Events"
+                    i18n:attributes="title; alt"
+                    tal:attributes="href string:${context/portal_url}/news-and-events">
+                    <img src="++theme++younglives.theme/images/quotes.png" />
+                    <span i18n:translate="younglives_theme_label_news_and_events">News &amp; Events</span>
+                </a>
+            </li>
+            <li>
+                <a title="E-newsletter / e-alerts" alt="E-newsletter / e-alerts"
+                    i18n:attributes="title; alt"
+                    tal:attributes="href string:http://www.younglives.org.uk/who-we-are/find-out-more">
+                    <img src="++theme++younglives.theme/images/alerts.png" />
+                    <span i18n:translate="younglives_theme_label_enewsletter">E-newsletter / e-alerts</span>
+                </a>
+            </li>
+            <li>
+                <a title="Follow us on Twitter" alt="Follow us on Twitter"
+                    i18n:attributes="title; alt"
+                    href="http://twitter.com/yloxford">
+                    <img src="++theme++younglives.theme/images/round_twitter_icon.png" />
+                    <span i18n:translate="younglives_theme_label_follow_twitter">Follow us on Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a title="Like us on Facebook" alt="Like us on Facebook"
+                    i18n:attributes="title; alt"
+                    href="http://www.facebook.com/pages/Young-Lives-An-International-Study-of-Childhood-Poverty/232144236892777">
+                    <img src="++theme++younglives.theme/images/round_facebook_icon.png" />
+                    <span i18n:translate="younglives_theme_label_like_facebook">Like us on Facebook</span>
+                </a>
+            </li>
+            <li>
+                <a title="iTunes U podcasts" alt="iTunes U podcasts"
+                    i18n:attributes="title; alt"
+                    tal:attributes="href string:http://www.younglives.org.uk/what-we-do/podcasts">
+                    <img src="++theme++younglives.theme/images/podcasts.png" />
+                    <span i18n:translate="younglives_theme_label_itunes">iTunes U podcasts</span>
+                </a>
+            </li>
+            <li>
+                <a title="Contact us" alt="Contact us" accesskey="6"
+                    i18n:attributes="title; alt"
+                    tal:attributes="href string:${context/portal_url}/find-out-more">
+                    <img src="++theme++younglives.theme/images/contact.png" />
+                    <span i18n:translate="younglives_theme_label_contact_us">Contact us</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="logo" tal:condition="isHomepage">
+        <a href="http://www.ox.ac.uk">
+            <img src="++theme++younglives.theme/images/logo-oxford.png" alt="University of Oxford." />
+        </a>
+    </div>
+    <div class="links">
+        <ul>
+            <li><a title="Sitemap" alt="Sitemap" accesskey="3"
+                tal:attributes="href string:${context/portal_url}/sitemap"
+                i18n:attributes="title; alt"
+                i18n:translate="younglives_theme_label_sitemap"
+                >Sitemap</a></li>
+            <li><a title="Terms and Conditions" alt="Terms and Conditions"
+                tal:attributes="href string:http://www.younglives.org.uk/terms-and-conditions"
+                i18n:attributes="title; alt"
+                i18n:translate="younglives_theme_label_terms_conditions"
+                >Terms &amp; Conditions</a></li>
+            <li class="last"><a title="Accessibility statement" alt="Accessibility statement" accesskey="0"
+                tal:attributes="href string:${context/portal_url}/accessibility-info"
+                i18n:attributes="title; alt"
+                i18n:translate="younglives_theme_label_accessibility"
+                >Accessibility statement</a></li>
+            <tal:modified condition="not:isHomepage"
+                define="toLocalizedTime nocall:context/@@plone/toLocalizedTime">
+                <li class="update">
+                    <span i18n:translate="younglives_theme_label_page_last_updated">Page last updated:</span>
+                    <span tal:replace="python:toLocalizedTime(context.ModificationDate())" />
+                </li>
+            </tal:modified>
+        </ul>
+    </div>
+</div>

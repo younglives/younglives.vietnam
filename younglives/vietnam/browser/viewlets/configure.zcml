@@ -14,4 +14,12 @@
         permission="zope2.View"
         />
 
+  <browser:viewlet
+        name="younglives.vietnam.footer"
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        class="younglives.theme.browser.footer.FooterViewlet"
+        template="footer.pt"
+        layer="younglives.vietnam.browser.interfaces.IYounglivesVietnam"
+        permission="zope2.View" />
+
 </configure>
