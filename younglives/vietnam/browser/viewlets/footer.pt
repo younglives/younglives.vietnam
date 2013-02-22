@@ -56,7 +56,7 @@
             <li>
                 <a title="iTunes U podcasts" alt="iTunes U podcasts"
                     i18n:attributes="title; alt"
-                    tal:attributes="href string:http://www.younglives.org.uk/what-we-do/podcasts">
+                    tal:attributes="href string:${context/portal_url}/news-and-events/podcasts">
                     <img src="++theme++younglives.theme/images/podcasts.png" />
                     <span i18n:translate="younglives_theme_label_itunes">iTunes U podcasts</span>
                 </a>
