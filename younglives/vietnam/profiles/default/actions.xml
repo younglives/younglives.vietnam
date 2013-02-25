@@ -32,7 +32,7 @@
   <object name="ethiopia_tab" meta_type="CMF Action" i18n:domain="younglives.vietnam">
    <property name="title" i18n:translate="">Ethiopia</property>
    <property name="description" i18n:translate=""></property>
-   <property name="url_expr">string:http://www.younglives-ethiopia.org.uk</property>
+   <property name="url_expr">string:http://www.younglives-ethiopia.org</property>
    <property name="icon_expr"></property>
    <property name="available_expr"></property>
    <property name="permissions">
@@ -43,7 +43,7 @@
   <object name="india_tab" meta_type="CMF Action" i18n:domain="younglives.vietnam">
    <property name="title" i18n:translate="">India</property>
    <property name="description" i18n:translate=""></property>
-   <property name="url_expr">string:http://www.younglives-india.org.uk</property>
+   <property name="url_expr">string:http://www.younglives-india.org</property>
    <property name="icon_expr"></property>
    <property name="available_expr"></property>
    <property name="permissions">
