@@ -4,6 +4,6 @@
      i18n:domain="younglives.vietnam"
      class="portlet" id="vietnam-logo-portlet">
 
-    <img src="++resource++younglives.vietnam.images/vietnam.jpg" />
+    <img tal:attributes="src string:${context/portal_url}/++resource++younglives.vietnam.images/vietnam.jpg" />
 
 </div>

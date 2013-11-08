@@ -4,6 +4,6 @@
      i18n:domain="younglives.vietnam"
      class="country-banner" id="vietnam-banner">
 
-    <img src="++resource++younglives.vietnam.images/banner.jpg" />
+    <img tal:attributes="src string:${context/portal_url}/++resource++younglives.vietnam.images/banner.jpg" />
 
 </div>
