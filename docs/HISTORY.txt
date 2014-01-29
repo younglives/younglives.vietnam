@@ -1,8 +1,12 @@
 Changelog
 =========
 
-1.0.1 Unreleased
+1.0.1 2014/01/29
 ----------------
+
+ - Fix domain names
+ - Fix banner for portal factory
+ - Switch back to arial font
 
 1.0.0 2013/02/22
 ----------------
